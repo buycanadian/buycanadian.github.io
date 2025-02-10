@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Buy Canadian</title>
+  
+
+</head>
+<body class="bg-gray-200">
+<!-- partial:index.partial.html -->
+<!-- Header -->
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto py-6 px-4">
+      <h1 class="text-3xl font-bold text-gray-900">Buy Canadian</h1>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto py-6 px-4">
+    <!-- Intro Paragraph -->
+    <section class="mb-6">
+      <h2 class="text-2xl font-bold text-gray-800 mb-2">Discover Authentic Canadian Products</h2>
+      <p class="text-gray-700">
+        Welcome to Buy Canadian Products – your curated guide to items proudly crafted in Canada or made with Canadian-sourced materials.
+        In response to tariff challenges on Canadian goods, every product listed here supports our local economy.
+        Explore our selection and make a difference with every purchase.
+      </p>
+    </section>
+
+    <!-- Search, Filter, and Sort Section -->
+    <section class="mb-6">
+      <div class="mb-4">
+        <input
+          id="searchInput"
+          type="text"
+          placeholder="Search by product name..."
+          class="p-2 border border-gray-300 rounded w-full"
+        />
+      </div>
+      <div class="flex flex-wrap items-center gap-4 mb-4">
+        <label class="inline-flex items-center">
+          <input
+            type="checkbox"
+            class="form-checkbox h-5 w-5 text-blue-600"
+            value="madeInCanada"
+            id="filterMadeInCanada"
+          />
+          <span class="ml-2 text-gray-700">Made in Canada</span>
+        </label>
+        <label class="inline-flex items-center">
+          <input
+            type="checkbox"
+            class="form-checkbox h-5 w-5 text-blue-600"
+            value="canadianMaterials"
+            id="filterCanadianMaterials"
+          />
+          <span class="ml-2 text-gray-700">Canadian Materials</span>
+        </label>
+        <div>
+          <select id="sortSelect" class="p-2 border border-gray-300 rounded">
+            <option value="name-asc">Sort by Name: A–Z</option>
+            <option value="name-desc">Sort by Name: Z–A</option>
+            <option value="newest">Sort by Newest</option>
+            <option value="oldest">Sort by Oldest</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Grid (4 per row on large screens) -->
+    <section
+      id="productGrid"
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+    >
+      <!-- Product cards will be inserted here dynamically -->
+    </section>
+
+    <!-- Pagination Controls -->
+    <section id="pagination" class="mt-6 flex justify-center gap-2">
+      <!-- Pagination buttons will be inserted here -->
+    </section>
+  </main>
+<!-- partial -->
+  <script src='https://cdn.tailwindcss.com'></script><script  src="./script.js"></script>
+
+</body>
+</html>
